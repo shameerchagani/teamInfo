@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+   
+    background: #fde6ee;
+}
+ /* h1{
+    text-align: center;
+    font-family: 'Baloo Tammudu 2', cursive;
+    margin-bottom: 0;
+
+} */
+div.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+div.row{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.col{
+    flex-basis: 30%;
+    position: relative;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.col img{
+    width: 100%;
+}
+.pic{
+    filter:grayscale(100%);
+}
+.pic:hover{
+    filter:grayscale(0%);
+    border: 5px inset hotpink;
+}
+.info{
+    background: #000;
+    width: 90%;
+    padding: 15px 0;
+    text-align: center;
+    border-radius: 3px;
+    box-sizing: border-box;
+    color: white;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -50px;
+}
+.info p{
+    font-size: 12px;
+    font-style: italic;
+    padding-bottom: 10px;
+}
+.fab{
+padding: 5px 10px;
+font-size: 25px;
+cursor: pointer;
+}
+.fa-facebook:hover{
+color:#5088fb;
+}
+.fa-instagram:hover{
+color:#e95950;
+}
+.fa-twitter:hover{
+color: #1da1f2;
+}
+.fa-youtube:hover{
+color: #ff0000;
+}
+
+
+
+@media screen and (max-width: 768px){
+   .container{
+       margin-top: 50px;
+   }
+    .row{
+        display: flex;
+        flex-direction: column;
+    }
+    .col{
+        margin-bottom: 100px;
+    }
+}
